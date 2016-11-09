@@ -16,11 +16,22 @@ namespace App {
                 .state ('about',{
                     url:'/about',
                     templateUrl:'templates/about.html',
+                    controller: App.AboutController,
+                    controllerAs: 'aboutController'
                 })
                 .state ('contact',{
                     url:'/contact',
-                    templateUrl:'templates/contact.html'
+                    templateUrl:'templates/contact.html',
+                    controller: App.ContactController,
+                    controllerAs: 'contactController'
                 })
+                ;
+                .state ('FAQ', {
+                url: '/faq',
+                templateUrl: 'templates/faq.html',
+                controller: App.FaqController,
+                controllerAs: 'faqController'
+            })
             ;
         }
     ]);

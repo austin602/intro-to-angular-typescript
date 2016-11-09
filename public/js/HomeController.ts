@@ -1,11 +1,14 @@
 namespace App {
 
     export class HomeController{
-        static $inject = ['$scope'];
+        static $inject = [];
 
-        constructor (private $scope) {
-            $scope.title = 'Home Page';
-            
+        public title;
+    
+
+        constructor () {
+            this.title = 'Home Page';
+
         }
     }
 
